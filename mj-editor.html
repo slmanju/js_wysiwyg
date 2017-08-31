@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>mEditor</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <style>
+            #meditor {
+                margin: 10px 0;
+                padding: 5px;
+                width: 600px;
+                border: 1px solid gray;
+            }
+            
+            #message {
+                margin: 5px;
+                padding: 5px;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Hello World!</h3>
+        <div id="container">
+            <div id="message">This is a simple WYSIWYG editor created using HTML5. No need to use third party libraries anymore :)</div>
+            <div id="toolbar">
+                <button id="save" class="fa fa-save"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="undo" class="fa fa-undo"></button>
+                <button data-command="redo" class="fa fa-repeat"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="copy" class="fa fa-copy"></button>
+                <button data-command="cut" class="fa fa-cut"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="bold" class="fa fa-bold"></button>
+                <button data-command="italic" class="fa fa-italic"></button>
+                <button data-command="underline" class="fa fa-underline"></button>
+                <button data-command="strikeThrough" class="fa fa-strikethrough"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="justifyCenter" class="fa fa-align-center"></button>
+                <button data-command="justifyFull" class="fa fa-align-justify"></button>
+                <button data-command="justifyLeft" class="fa fa-align-left"></button>
+                <button data-command="justifyRight" class="fa fa-align-right"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="insertUnorderedList" class="fa fa-th-list"></button>
+                <button data-command="insertOrderedList" class="fa fa-list-ol"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="subscript" class="fa fa-subscript"></button>
+                <button data-command="superscript" class="fa fa-superscript"></button>
+                
+                <span class="fa fa-ellipsis-v"></span>
+                
+                <button data-command="removeFormat" class="fa fa-eraser"></button>
+                
+                <select id="font-size">
+                    <option value="10px">10</option>
+                    <option value="12px">12</option>
+                    <option value="14px">14</option>
+                    <option value="16px">16</option>
+                    <option value="18px">18</option>
+                    <option value="20px">20</option>
+                    <option value="22px">22</option>
+                </select>
+            </div>
+            <div id="meditor" contenteditable="true">
+                <h3>A Simple WYSIWYG Editor.</h3>
+                <p>Write something :)</p>
+            </div>
+        </div>
+        <script src="meditor.js"></script>
+    </body>
+</html>
